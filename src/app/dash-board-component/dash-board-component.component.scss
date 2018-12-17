@@ -1,0 +1,19 @@
+.dashBoard {
+    .ligne {
+        width: 90%;
+       .blockSection {
+           border: 1px solid lightgrey;
+           border-radius: 5px;
+           background-color: #f7f7f7;
+           margin: 1rem;
+       } 
+       .block1 {
+           margin-left: 2rem;
+           font-size: 3rem;
+           color: grey;
+       }
+       .block2 {
+           margin-right: 2rem;
+       }
+    }
+}
