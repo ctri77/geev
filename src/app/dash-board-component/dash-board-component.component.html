@@ -10,9 +10,29 @@
       <span>100.00%</span>
       
     </div>
-
   </div>
-  <div>
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>TIME</th>
+        <th>TIME (REL.)</th>
+        <th>RESPONSE TIME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of resultsFilter; let index = index;">
+        <td>
+          <img class="image" src="assets/medias/up-arrow.png" alt="upload"/>
+          {{ result.tempTime }}
+        </td>
+        <td>
+          {{ result.rel }}
+        </td>
+        <td>
+          {{ result.diff }} ms
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
